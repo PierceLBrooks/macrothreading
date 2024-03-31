@@ -31,6 +31,7 @@ else()
     # Create the library
     add_library(${PROJECT_NAME} ${sources})
     target_include_directories(${PROJECT_NAME} PUBLIC inc)
+    install(TARGETS ${PROJECT_NAME})
 
     # Create the library
     find_package(Threads)
